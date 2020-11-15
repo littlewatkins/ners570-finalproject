@@ -1,9 +1,15 @@
 module test_addition
+implicit none
+contains
 
-  use fruit
-  implicit none
+  subroutine test_adding_integers
+    use fruit
+    use calculator, only: addition
+    integer :: result, a, b
+    a = 2
+    b = 2
+    call add (a,b,result)
+    call assertEquals(4, result)
+  endsubroutine test_adding_integers
 
-  contains
-  subroutine test_add
-
-module test_addition
+endmodule test_addition

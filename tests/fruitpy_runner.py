@@ -8,4 +8,4 @@ build_command  = "make test_driver"
 
 suite = test_suite(test_modules)
 suite.build_run(driver, build_command)
-suit.summary()
+suite.summary()
