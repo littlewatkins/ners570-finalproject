@@ -2,7 +2,7 @@
 
 from FRUIT import *
 
-test_modules = ["test_addition.f90"]
+test_modules = ["calculator_test.f90"]
 driver = "test_driver.f90"
 build_command  = "make test_driver"
 
