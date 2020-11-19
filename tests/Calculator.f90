@@ -4,6 +4,8 @@
 
 module Calculator
   implicit none
+private
+public :: add
 contains
   subroutine add (a, b, output)
     integer, intent (in) :: a, b
